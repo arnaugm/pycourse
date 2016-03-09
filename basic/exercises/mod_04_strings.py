@@ -13,7 +13,11 @@ def sum_chars_text(text):
             >>> ord(c)
             99
     '''
-    pass
+    result = 0
+    for x in text:
+        result = result + ord(x)
+
+    return result
 
 
 def reverse_text_by_word(text):
@@ -22,8 +26,9 @@ def reverse_text_by_word(text):
         >>> reverse_text_by_word('Sparse is better than dense.')
         'dense. than better is Sparse'
     '''
-    pass
-
+    result = ' '.join(reversed(text.split(' ')))
+    
+    return result
 
 def remove_identation_multiline_string(text):
     '''given a multiline text, removes identation

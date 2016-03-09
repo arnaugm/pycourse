@@ -4,12 +4,15 @@ u'''
 Exercises MOD 11: Classes
 '''
 
+class Dice(object):
+    def roll(self):
+        pass
 
 class Craps(object):
     """Simple game of craps."""
     def __init__(self):
         self.state = None
-        self.dice = dice.Dice()
+        self.dice = Dice()
         self.playing = False
 
     def start(self):
